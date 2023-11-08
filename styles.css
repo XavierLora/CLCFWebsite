@@ -10,6 +10,10 @@
     height: 10vh;
     padding-left: 2vh;
 }
+.nav-item{
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
 #navbarHam{
     color: white;
     font-size: 1.5em;
