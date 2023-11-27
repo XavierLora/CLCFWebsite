@@ -35,6 +35,10 @@
     font-size: 2rem;
     line-height: 4vh;
 }
+#gallery{
+    margin: auto;
+    align-items: center;
+}
 #logoImgFooter{
     width: 15vh;
     height: 10vh;
@@ -44,15 +48,54 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 3vh;
+    gap: 5vh;
 }
+
 #facebookIcon{
     width: 5vh;
     fill: var(--green);
 }
+#registrationLink{
+    color: var(--green);
+    font-size: 150%;
+    line-height: 175%;
+    padding-top: 1.5vh;
+}
 i{
     font-size: 5vh;
     color: var(--green);
+}
+#contactContainer{
+    padding-top: 2vh;
+    
+}
+#mapApi{
+    height: 50vh;
+}
+#addressContact{
+    text-align: center;
+    color: #5a5a5a;
+    padding-top: 5vh;
+}
+#contactFooter{
+    bottom: 0;
+}
+#copyRight{
+    color: var(--green);
+    text-align: center;
+}
+#questionsText{
+    padding-top:5vh;
+}
+#contactInfoText{
+    padding-top: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    color: #5a5a5a;
+}
+.pText{
+    font-size: 200%;
+    padding: 1vh;
 }
 #debud{
     border: solid black 1px;
