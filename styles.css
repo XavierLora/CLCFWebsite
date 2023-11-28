@@ -21,6 +21,18 @@
 .nav-item{
     font-size: 2em;
 }
+ul.dropdown-menu { 
+    background-color: #228B22; 
+    border: 0;
+    font-size: 0.75em;
+}
+ul.dropdown-menu a{
+    color: white;
+}
+ul.dropdown-menu a:hover{
+    background-color: #228B22;
+    color: black;
+}
 #bodyHead{
     font-family: 'Graduate', serif;
     padding-top: 3vh;
