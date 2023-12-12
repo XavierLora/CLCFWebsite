@@ -1,5 +1,18 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #B2BEB5;
+    --orange: #fe853d;
+}
+html { height: 100% }
 body{
+    margin: 0;
+    width: 100vw;
+    min-height: fit-content;
     overflow-x: hidden;
+}
+div{
+    overflow: hidden;
 }
 @font-face{
     font-family: falcon;
@@ -65,7 +78,7 @@ ul.dropdown-menu a:hover{
 #bodyHead{
     font-family: 'Falcon', serif;
     padding-top: 3vh;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     position: absolute;
     top: 0;
@@ -78,8 +91,8 @@ ul.dropdown-menu a:hover{
     color: white;
 }
 #teamImg{
-    max-height: 60vh;
-    width: fit-content;
+    max-height: auto;
+    width: 100%;
     filter: brightness(60%);
 }
 #landingImg{
@@ -88,16 +101,15 @@ ul.dropdown-menu a:hover{
     height: 100%;
     min-height: 25vh;
 }
+#paragraphContainer{
+    margin-bottom: 1vh;
+}
 .CLCFparagraph{
     padding-top: 2vh;
-    padding-left: 8vh;
-    padding-right: 8vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
     font-size: 2rem;
     line-height: 4vh;
-}
-#gallery{
-    margin: auto;
-    align-items: center;
 }
 #logoImgFooter{
     width: 15vh;
@@ -109,6 +121,109 @@ ul.dropdown-menu a:hover{
     justify-content: center;
     align-items: center;
     gap: 5vh;
+}
+#galleryContainer{
+    height: calc(100%+100px);
+}
+.galleryGrid{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+    grid-template-rows: min-content;   
+    justify-items: center; 
+    row-gap: 2vh;
+    z-index: 2;
+    padding-top: 1vh;
+    padding-bottom: 2.5vh;
+}
+.card{
+    position: relative;
+    height: fit-content;
+    width: 83.33%;
+    margin: auto;
+    aspect-ratio: 16/9;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(0,0,0,0.28) 100%, rgba(0,0,0,.72) 0%);
+    border-radius: .7rem;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(6px);
+    overflow: hidden;
+    transition: ease-in-out .3s;
+    
+    &:hover {
+      transform: translateY(-2%);
+      border: 1px solid rgba(#F2F4F8, 0);
+      box-shadow: 0 7px 20px 5px #00000088;
+      cursor: pointer;
+    }
+    
+    &:active {
+      transform: translateY(2%);
+      box-shadow: 0 7px 20px 5px #00000088;
+      transition: ease-in-out .1s;
+    }
+    
+}
+.cardContents{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    height: 57.5%;   
+    border-radius: 0.5rem;
+}
+#prePrkImg{
+    border-radius: 1rem;
+    max-width: 100%;
+    padding: 0.5vh;
+    margin: auto;
+}
+.cardTextContainer{
+    width: 100%;
+    height: 40%;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: [leftEdge]3% [leftItems]45% [center] 49% [rightItems] 3% [rightEdge];
+    grid-template-rows: [top1]5%[startItem] 25% [logoContainer]50% [description] auto [last] 5% [bttm];
+    transition: top ease 0.5s;
+}
+.cardTitleFlex{
+    grid-column-start: leftItems;
+    grid-column-end: rightItems;
+    grid-row-start: startItem;
+    grid-row-end: logoContainer;
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    align-items: center;
+}
+#cardTitle{
+    font-size: 175%;
+    font-weight: 100;
+    text-align: left;
+    align-self: center;
+    color: var(--white);
+}
+.cardDescContainer{
+    grid-column-start: leftItems;
+    grid-column-end: rightItems;
+    grid-row-start: logoContainer;
+    grid-row-end: last;
+    width: 100%;
+}
+.cardDescContainer h2{
+    min-width: 0;
+    min-height: 0;
+    font-weight: 100;
+    font-size: 175%;
+    color: var(--grey);
+    margin-top: auto;
+    word-wrap: break-word;
+    max-width: 100%;
+    white-space: normal;
+    overflow: visible;
 }
 
 #facebookIcon{
@@ -123,34 +238,61 @@ ul.dropdown-menu a:hover{
 }
 i{
     font-size: 5vh;
-    color: var(--green);
+    color: var(--orange);
 }
 #contactContainer{
     padding-top: 12.5vh;
 }
-#mapApi{
+.mapContainer{
     height: 50vh;
+    width: 100%;
 }
 #addressContact{
     text-align: center;
-    color: #5a5a5a;
+    color: white;
     padding-top: 5vh;
 }
 #contactFooter{
     bottom: 0;
 }
 #copyRight{
-    color: var(--green);
+    color: var(--grey);
     text-align: center;
-}
-#questionsText{
-    padding-top:5vh;
 }
 #contactInfoText{
     padding-top: 1vh;
     padding-left: 2vh;
     padding-right: 2vh;
-    color: #5a5a5a;
+    color: white;
+}
+#contactUsContainer{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2vh;
+    padding-bottom: 1vh;
+    gap: 0.25vh;
+}
+.contactText{
+    font-size: 300%;
+}
+#contactPeriod{
+    color: #fe853d;
+}
+#emailContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    padding-top:2vh;
+}
+#addressContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    padding-bottom: 2vh;
 }
 .pText{
     font-size: 200%;
@@ -159,3 +301,7 @@ i{
 #debud{
     border: solid black 1px;
 }
+#footer{
+    padding: 0.5vh;
+}
+
