@@ -1,7 +1,7 @@
 var prevScrollpos = window.pageYOffset;
 var isNavbarAtTop = true;
 
-window.onscroll = function() {
+window.onscroll = function(e) {
   var currentScrollPos = window.pageYOffset;
 
   if (prevScrollpos > currentScrollPos) {
@@ -19,4 +19,9 @@ window.onscroll = function() {
   }
 
   prevScrollpos = currentScrollPos;
+
+  // Prevent the bounce effect on iOS
+  if (currentScrollPos <= 0 || currentScrollPos >= (document.documentElement.scrollHeight - window.innerHeight)) {
+    e.preventDefault();
+  }
 };
