@@ -397,3 +397,23 @@ form{
     padding: 0;
     margin: 0;
 }
+.sponsorText{
+    font-size: 200%;
+    padding: 1vh;
+    text-align: center;
+}
+.list-group-item{
+    background-color: #282c34;
+    color: white;
+    font-size: 150%;
+    width: 90%;
+    margin: auto;
+    border: 0;
+}
+#sponsorList{
+    width:auto-fit;
+}
+#sponsorEmailBlock{
+    text-align: center;
+    margin: auto;
+}
