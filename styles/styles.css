@@ -75,7 +75,7 @@ ul.dropdown-menu a:hover{
     color: white;
 }
 
-#bodyHead{
+.bodyHead{
     padding-top: 1vh;
     font-size: 3.5rem;
     text-align: center;
@@ -96,7 +96,7 @@ ul.dropdown-menu a:hover{
     padding: 0;
     position:relative;
     height: 100%;
-    min-height: 25vh;
+    min-height: 15vh;
 }
 #paragraphContainer{
     margin-bottom: 1vh;
@@ -151,6 +151,37 @@ ul.dropdown-menu a:hover{
     overflow: hidden;
     transition: ease-in-out .3s;
     
+    
+    &:hover {
+      transform: translateY(-2%);
+      border: 1px solid rgba(#F2F4F8, 0);
+      box-shadow: 0 7px 20px 5px #00000088;
+      cursor: pointer;
+    }
+    
+    &:active {
+      transform: translateY(2%);
+      box-shadow: 0 7px 20px 5px #00000088;
+      transition: ease-in-out .1s;
+    }
+    
+}
+.cardSponsor{
+    position: relative;
+    height: 92.5%;
+    width: 66%;
+    margin: auto;
+    aspect-ratio: 16/9;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(0,0,0,0.28) 100%, rgba(0,0,0,.72) 0%);
+    border-radius: .7rem;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(6px);
+    overflow: hidden;
+    transition: ease-in-out .3s;
+    
+    
     &:hover {
       transform: translateY(-2%);
       border: 1px solid rgba(#F2F4F8, 0);
@@ -173,6 +204,10 @@ ul.dropdown-menu a:hover{
     height: 57.5%;   
     border-radius: 0.5rem;
     overflow: hidden;
+}
+.cardContentSponsor{
+    width: 100%;
+    max-height: fit-content;
 }
 #prePrkImg{
     border-radius: 1rem;
