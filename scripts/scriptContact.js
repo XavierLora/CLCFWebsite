@@ -1,5 +1,5 @@
 var navbar = document.getElementById("navbarId");
-var image = document.getElementById("teamImg");
+var image = document.getElementById("contactUsContainer");
 
 var observer = new IntersectionObserver(function (entries) {
   entries.forEach(function (entry) {
@@ -11,7 +11,7 @@ var observer = new IntersectionObserver(function (entries) {
       navbar.style.top = "-20vw"; // Adjust this value as needed
     }
   });
-}, { threshold: 0.25 }); // Adjust the threshold as needed
+}, { threshold: 0.99 }); // Adjust the threshold as needed
 
 // Start observing the image
 observer.observe(image);
