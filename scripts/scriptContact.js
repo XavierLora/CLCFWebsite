@@ -8,10 +8,10 @@ var observer = new IntersectionObserver(function (entries) {
       navbar.style.top = "0";
     } else {
       // Image is out of view
-      navbar.style.top = "-20vw"; // Adjust this value as needed
+      navbar.style.top = "-30vw"; // Adjust this value as needed
     }
   });
-}, { threshold: 0.99 }); // Adjust the threshold as needed
+}, { threshold: 0.975 }); // Adjust the threshold as needed
 
 // Start observing the image
 observer.observe(image);
