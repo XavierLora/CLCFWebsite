@@ -31,7 +31,7 @@ body{
     transition: top 0.5s;
 }
 #logoImg{
-    max-width: 80%;
+    max-width: 50%;
     height: 20vw;
     padding-left: 2vh;
     padding-top: 1vh;
@@ -140,7 +140,7 @@ ul.dropdown-menu a:hover{
 .card{
     position: relative;
     height: fit-content;
-    width: 75%;
+    width: 66%;
     margin: auto;
     aspect-ratio: 16/9;
     border: 1px solid #ffffff22;
