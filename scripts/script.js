@@ -1,10 +1,22 @@
 var prevScrollpos = window.pageYOffset;
+var isNavbarAtTop = true;
+
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
+
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbarId").style.top = "0";
+    // Scrolling up
+    if (!isNavbarAtTop) {
+      document.getElementById("navbarId").style.top = "0";
+      isNavbarAtTop = true;
+    }
   } else {
-    document.getElementById("navbarId").style.top = "-100px";
+    // Scrolling down
+    if (isNavbarAtTop) {
+      document.getElementById("navbarId").style.top = "-22vw";
+      isNavbarAtTop = false;
+    }
   }
+
   prevScrollpos = currentScrollPos;
-} 
+};
