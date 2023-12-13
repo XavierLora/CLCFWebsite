@@ -16,7 +16,7 @@ div{
 }
 @font-face{
     font-family: falcon;
-    src: url(Facon.ttf);
+    src: url(../fonts/Facon.ttf);
 }
 .navbar{
     background-color: transparent;
