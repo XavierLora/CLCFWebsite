@@ -68,15 +68,37 @@
                 <h2>970 Pontiac Ave. Cranston 02920</h2>
               </div>
                 <div class="mapContainer">
-                  <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=17&center=41.7585%2C-71.4435&key=AIzaSyDUZivaXvZ2lA4pP9YgBLC0yRx7V9V1WP0"></iframe> 
+                  <div id="mapWrapper">
+                    <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=17&center=41.7585%2C-71.4435&key=AIzaSyDUZivaXvZ2lA4pP9YgBLC0yRx7V9V1WP0"></iframe> 
+                  </div>
                 </div>
             </div>
-            <div class="container-Fluid" id="contactInfoText">
-              <div id="emailContainer">
-                <h1>Questions?</h1>
-                <h2>Email baseball@clcfsports.org</h2>
+            <form>
+            <div class="container-fluid" id="contactInfoText">
+              <div class="container-fluid" id="contactUsFormContainer">
+                <div id="questionsTextContainer">
+                  <h1 class="questionsText">Questions</h1>
+                  <h1 class="questionsText" id="contactPeriod">?</h1>
+                </div>
+                <div class="input-group input-group-lg" id="emailInput">
+                  <span class="input-group-text" id="inputGroup-sizing-lg">Email:</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                </div> 
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">
+                  </label>
+                  <textarea class="form-control" id="questionInput" rows="3"></textarea>
+                </div>    
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary" id="submitQ">Submit</button>
+                </div> 
               </div>
-              <h1>Email Info</h1>
+            </form>
+              <h1 id="emailInfoText">Email Info</h1>
+              <div id="emailContainer">
+                <h1>Email: baseball@clcfsports.org</h1>
+              </div>
+              <div id="emailParagraph">
                 <p class="pText">All email addresses that are indicated on a player's registration form will be entered in our email database, and will be signed up to receive league-wide email blasts. You can unsubscribe from this list by clicking "Unsubscribe" at the bottom of any mass email.
  
                     If you are not receiving emails from CLCF Baseball, but would like to, please email us at contact@clcfbaseball.com with your name and child's playing division, and we will add your email to the appropriate list. </p>
@@ -95,5 +117,5 @@
     </body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-
+<script src="script.js"></script>
 </html>
