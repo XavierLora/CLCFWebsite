@@ -2,7 +2,7 @@
     --white: #FFFFFF;
     --black: #000000;
     --grey: #B2BEB5;
-    --orange: #fe853d;
+    --orange: #39913b;
 }
 html { height: 100% }
 body{
@@ -79,19 +79,16 @@ ul.dropdown-menu a:hover{
 }
 
 #bodyHead{
-    font-family: 'Falcon', serif;
-    padding-top: 3vh;
-    font-size: 3rem;
+    padding-top: 1vh;
+    font-size: 3.5rem;
     text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     color: white;
+    font-weight: 800;
 }
 #teamImg{
     max-height: auto;
@@ -293,7 +290,7 @@ i{
     font-size: 300%;
 }
 #contactPeriod{
-    color: #fe853d;
+    color: var(--orange);
 }
 #emailContainer{
     display: flex;
