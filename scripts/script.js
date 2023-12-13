@@ -1,27 +1,33 @@
-var prevScrollpos = window.pageYOffset;
-var isNavbarAtTop = true;
+const navbar = document.getElementById("navbarId");
 
-window.onscroll = function(e) {
-  var currentScrollPos = window.pageYOffset;
+            let lastScrollTop = 0;
+            addEventListener("scroll", () => {
+                // Current scroll position
+                const scrollTop =
+                    window.pageYOffset || document.documentElement.scrollTop;
 
-  if (prevScrollpos > currentScrollPos) {
-    // Scrolling up
-    if (!isNavbarAtTop) {
-      document.getElementById("navbarId").style.top = "0";
-      isNavbarAtTop = true;
-    }
-  } else {
-    // Scrolling down
-    if (isNavbarAtTop) {
-      document.getElementById("navbarId").style.top = "-22vw";
-      isNavbarAtTop = false;
-    }
-  }
+                // check scroll direction
+                const distance = scrollTop - lastScrollTop;
+                const currentTop = parseInt(
+                    getComputedStyle(navbar).top.split("px")
+                );
 
-  prevScrollpos = currentScrollPos;
+                // Clamp value between -80 and 0
+                let amount = Math.max(
+                    Math.min(
+                        currentTop +
+                            (distance < 0
+                                ? Math.abs(distance) // scrolling up
+                                : -Math.abs(distance)// scrolling down
+                                ) * 40, // (1)
+                        0
+                    ),
+                    -80
+                );
 
-  // Prevent the bounce effect on iOS
-  if (currentScrollPos <= 0 || currentScrollPos >= (document.documentElement.scrollHeight - window.innerHeight)) {
-    e.preventDefault();
-  }
-};
+                console.log(amount, currentTop, Math.abs(distance));
+
+                navbar.style.top = `${amount*1.9}px`;
+
+                lastScrollTop = scrollTop;
+            });
