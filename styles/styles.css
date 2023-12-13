@@ -11,9 +11,6 @@ body{
     min-height: fit-content;
     overflow-x: hidden;
 }
-div{
-    overflow: hidden;
-}
 @font-face{
     font-family: falcon;
     src: url(../fonts/Facon.ttf);
@@ -137,6 +134,7 @@ ul.dropdown-menu a:hover{
     z-index: 2;
     padding-top: 1vh;
     padding-bottom: 2.5vh;
+    overflow: hidden;
 }
 .card{
     position: relative;
@@ -174,6 +172,7 @@ ul.dropdown-menu a:hover{
     margin: auto;
     height: 57.5%;   
     border-radius: 0.5rem;
+    overflow: hidden;
 }
 #prePrkImg{
     border-radius: 1rem;
