@@ -311,6 +311,11 @@ i{
     font-size: 200%;
     padding: 1vh;
 }
+.pTextSmall{
+    font-size: 150%;
+    padding: 1vh;
+    color: var(--grey);
+}
 #debud{
     border: solid black 1px;
 }
