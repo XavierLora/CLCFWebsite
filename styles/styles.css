@@ -2,7 +2,8 @@
     --white: #FFFFFF;
     --black: #000000;
     --grey: #B2BEB5;
-    --orange: #39913b;
+    --green: #39913b;
+    --backgroundColor: #212429;
 }
 html { height: 100% }
 body{
@@ -10,10 +11,7 @@ body{
     width: 100vw;
     min-height: fit-content;
     overflow-x: hidden;
-}
-@font-face{
-    font-family: falcon;
-    src: url(../fonts/Facon.ttf);
+    background-color: var(--backgroundColor);
 }
 .navbar{
     background-color: transparent;
@@ -42,6 +40,7 @@ body{
 .nav-item{
     padding-left: 1vh;
     padding-right: 1vh;
+    font-size: 2em;
 }
 .navbar-toggler{
     border: 2px solid white;
@@ -52,9 +51,6 @@ body{
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
-.nav-item{
-    font-size: 2em;
-}
 #offcanvasNavbarLabel{
     font-size: 250%;
 }
@@ -276,7 +272,7 @@ ul.dropdown-menu a:hover{
 }
 i{
     font-size: 5vh;
-    color: var(--orange);
+    color: var(--green);
 }
 #contactContainer{
     padding-top: 12.5vh;
@@ -324,7 +320,7 @@ i{
     font-size: 300%;
 }
 #contactPeriod{
-    color: var(--orange);
+    color: var(--green);
 }
 #emailContainer{
     display: flex;
@@ -391,8 +387,8 @@ i{
 }
 #submitQ{
     background-color: #212529;
-    border-color: var(--orange);
-    color: var(--orange);
+    border-color: var(--green);
+    color: var(--green);
     font-size: 150%;
 }
 form{
@@ -418,4 +414,92 @@ form{
 #sponsorEmailBlock{
     text-align: center;
     margin: auto;
+}
+#storeLink{
+    color: var(--green);
+}
+.accordion{
+    margin: auto;
+    width: 90%;
+}
+.accordion-body{
+    background-color: #282c34;
+    color: white;
+    font-size: 1.25em;
+}
+.accordion-item{
+    border-color: #282c34;
+}
+.accordion-button{
+    color:white;
+    background-color: #282c34;
+}
+.accordion-button.collapsed {
+    background: #282c34;
+    font-size: 1em;
+}
+.accordion-button.collapsed::after {
+    font-size: 1em;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.table {
+    width: 90%;
+    margin: auto;
+    border: solid 1px var(--grey);
+    border-radius: 9px;
+    font-size: 1.25em;
+}
+#leaderList{
+    padding-bottom: 5vh;
+}
+
+#leaderList th[scope="col"] {
+    text-align: center;
+}
+
+#leaderList td:nth-child(2) {
+    text-align: center;
+}
+
+/* Add the following styles for rounded borders */
+.table-rounded {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    #logoImg{
+        max-width: 75%;
+        height: 15vw;
+    }
+    .nav-item{
+        font-size: 2.25em;
+    }
+    ul.dropdown-menu { 
+        font-size: 1em;
+    }
+    #landingImg{
+        position: relative;
+        overflow: hidden;
+        max-height: 475px;
+    }
+    #teamImg{
+        height: auto;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #logoImg{
+        max-width: 100%;
+        height: 10vw;
+    }
+    #landingImg{
+        position: relative;
+        overflow: hidden;
+        max-height: 600px;
+    }
+    #teamImg{
+        height: auto;
+        width: 100%;
+    }
 }
