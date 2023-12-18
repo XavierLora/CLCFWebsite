@@ -87,6 +87,14 @@ ul.dropdown-menu a:hover{
     width: 100%;
     filter: brightness(60%);
 }
+#teamImgHome{
+    max-height: auto;
+    width: 100%;
+    filter: brightness(60%);
+}
+#teamImgCropHome{
+    display: none;
+}
 #landingImg{
     padding: 0;
     position:relative;
@@ -483,9 +491,14 @@ form{
         overflow: hidden;
         max-height: 475px;
     }
-    #teamImg{
-        height: auto;
+    #teamImgHome{
+        display: none;
+    }
+    #teamImgCropHome{
+        display: inline-block;
+        max-height: auto;
         width: 100%;
+        filter: brightness(60%);
     }
 }
 @media only screen and (min-width: 1024px) {
@@ -498,8 +511,34 @@ form{
         overflow: hidden;
         max-height: 600px;
     }
-    #teamImg{
-        height: auto;
-        width: 100%;
+    .card{
+        position: relative;
+        height: fit-content;
+        width: 80%;
+        margin: auto;
+        aspect-ratio: 16/9;
+        border: 1px solid #ffffff22;
+        background-color: #282c34;
+        background: linear-gradient(0deg, rgba(0,0,0,0.28) 100%, rgba(0,0,0,.72) 0%);
+        border-radius: .7rem;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(6px);
+        overflow: hidden;
+        transition: ease-in-out .3s;
+        
+        
+        &:hover {
+          transform: translateY(-2%);
+          border: 1px solid rgba(#F2F4F8, 0);
+          box-shadow: 0 7px 20px 5px #00000088;
+          cursor: pointer;
+        }
+        
+        &:active {
+          transform: translateY(2%);
+          box-shadow: 0 7px 20px 5px #00000088;
+          transition: ease-in-out .1s;
+        }
+        
     }
 }
