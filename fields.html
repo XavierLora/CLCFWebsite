@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="theme-color" content="#212529"/>
+            <link rel="stylesheet" type="text/css" href="./styles/modnorm.min.css"> 
+            <title>CLCFSite</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet"> 
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+            <link rel="stylesheet" type="text/css" href="./styles/styles.css"> 
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg bg-transparent navbar-dark fixed-top" id="navbarId">
+        <div class="container-fluid">
+          <div id="flexNav">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" id="logoImg" src="./Imgs/CLCF.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon" id="navToggler"></span>
+            </button>
+          </div>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CLCF Navigation</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">        
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                  <ul class="dropdown-menu dropdown-menu-dark" >
+                    <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                    <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+                    <li><a class="dropdown-item active" href="fields.html">Fields</a></li>
+                    <li><a class="dropdown-item" href="Leadership.html">Leadership</a></li>
+                    <li><a class="dropdown-item" href="COC.html">Code of Conduct</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parents</a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="https://baberuthsafety.sportngin.com/survey/disabled/305597">Register</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">Coaches</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./volunteer.html">Volunteer</a></li>
+                      <li><a class="dropdown-item" href="sponsors.html">Sponsor Info</a></li>
+                    </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" id="storeLink">Store</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+        <div id="bodyPage">
+            <div class="container-fluid" id="contactContainer">
+                <div id="contactUsContainer">
+                  <h1 class="contactText">Our Fields</h1>
+                  <h1 class="contactText" id="contactPeriod">.</h1>
+                </div>
+                <div class="container-fluid">
+                    <p class="sponsorText">CLCF Baseball runs practices and games at a variety of fields throughout the City of Cranston. Please click on the name of a field for more information about the field, as well as directions to the field.
+ 
+                        Please note that per city ordinance, smoking is not allowed at any field.
+                    </p>
+                  </div>
+              <div class="container-fluid" id="galleryContainer">
+                <div class="galleryGrid">
+                    <div class="card">
+                        <div class="cardContents">
+                            <img id="prePrkImg" src="./Imgs/hopeField.png">
+                        </div>
+                        <div class="cardTextContainerFields">
+                            <div class="cardTitleFlex">
+                                <h1 id="cardTitle">Hope Field</h1>
+                                <a href="https://www.google.com/maps/place/460+Hope+Rd,+Cranston,+RI+02921/@41.7526747,-71.5167349,17z/data=!3m1!4b1!4m6!3m5!1s0x89e44971cb8815eb:0x35822bceb9a12729!8m2!3d41.7526747!4d-71.5141653!16s%2Fg%2F11cscf7wvd?entry=ttu"><i class="bi bi-map" id="map"></i></a>
+                            </div>
+                            <div class="cardDescContainerField">
+                                <h2>460 Hope Road Cranston, Rhode Island 02921</h2>
+                                <h3>In the John Chafee Athletic Complex, Cranston's first 50'70 baseball field, renovated in 2012, supports both 50'70 and traditional 40'60 games, with a batting cage for players and seating/restrooms for spectators.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                      <div class="cardContents">
+                          <img id="prePrkImg" src="./Imgs/ricciField.png">
+                      </div>
+                      <div class="cardTextContainerFields">
+                          <div class="cardTitleFlex">
+                              <h1 id="cardTitle">Ricci "Bain" Field</h1>
+                              <a href="https://www.google.com/maps/place/20+Duckworth+St,+Cranston,+RI+02910/@41.785435,-71.4548781,17z/data=!3m1!4b1!4m5!3m4!1s0x89e44f15743dd4a9:0x881642e185211257!8m2!3d41.785435!4d-71.4523085?entry=ttu"><i class="bi bi-map" id="map"></i></a>
+                          </div>
+                          <div class="cardDescContainerField">
+                              <h2>20 Duckworth Street Cranston, Rhode Island 02920</h2>
+                              <h3>CLCF Baseball's central field, near Hugh B. Bain Middle School, hosts tournaments, including the 2013 Cal Ripken Regional. It offers player bullpens, a concession stand, seating, and restrooms for spectators.</h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <div class="cardContents">
+                        <img id="prePrkImg" src="./Imgs/gcField.png">
+                    </div>
+                    <div class="cardTextContainerFields">
+                        <div class="cardTitleFlex">
+                            <h1 id="cardTitle">Garden City Field</h1>
+                            <a href="https://www.google.com/maps/place/34+Magazine+St,+Cranston,+RI+02920/@41.7621536,-71.4531694,17z/data=!3m1!4b1!4m5!3m4!1s0x89e44ee718537f9b:0xf33949affcac8973!8m2!3d41.7621536!4d-71.4505945?entry=ttu"><i class="bi bi-map" id="map"></i></a>
+                        </div>
+                        <div class="cardDescContainerField">
+                            <h2>34 Magazine Street Cranston, Rhode Island, 02920</h2>
+                            <h3>
+                              Located behind Garden City Elementary School, this field has a batting cage and bullpen for players, as well as seating for spectators.
+                               
+                              Garden City Field was renovated in December of 2015, and a new grass infield was installed.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="cardContents">
+                      <img id="prePrkImg" src="./Imgs/clcfField.png">
+                  </div>
+                  <div class="cardTextContainerFields">
+                      <div class="cardTitleFlex">
+                          <h1 id="cardTitle">CLCF Building Field</h1>
+                          <a href="https://www.google.com/maps/place/970+Pontiac+Ave,+Cranston,+RI+02920/@41.7585011,-71.4461069,17z/data=!3m1!4b1!4m6!3m5!1s0x89e44ee56bd96cbd:0x397f5deca4ef6891!8m2!3d41.7585011!4d-71.443532!16s%2Fg%2F11c3q43m5l?entry=ttu"><i class="bi bi-map" id="map"></i></a>
+                      </div>
+                      <div class="cardDescContainerField">
+                          <h2>970 Pontiac Avenue Cranston, Rhode Island, 02920</h2>
+                          <h3>Located behind the CLCF Building, this field is home to our younger divisions. Offers a baseball field, and open land for practices, as well as seating for spectators.</h3>
+                      </div>
+                  </div>
+              </div>
+                  </div>
+            </div>
+            </div>
+            <div class="container-fluid" id="contactFooter">
+                <div id="socialFlex">
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <h2 id="copyRight">&#169; 2023 CLCF Baseball</h2>
+              </div>
+              </div>
+            </body>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="./scripts/scriptContact.js"></script>
+        </html>
