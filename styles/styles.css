@@ -87,11 +87,6 @@ ul.dropdown-menu a:hover{
     width: 100%;
     filter: brightness(60%);
 }
-#teamImgHome{
-    max-height: auto;
-    width: 100%;
-    filter: brightness(60%);
-}
 #teamImgCropHome{
     display: none;
 }
